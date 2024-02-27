@@ -3,17 +3,213 @@
 exports[`Header renders without error 1`] = `
 {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c0 {
+  display: block;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.c2 {
+  font-size: 64px;
+  -webkit-letter-spacing: -0.025em;
+  -moz-letter-spacing: -0.025em;
+  -ms-letter-spacing: -0.025em;
+  letter-spacing: -0.025em;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-left: 200px;
+}
+
+.c3 {
+  margin: -20px 0 0 203px;
+  font-size: 19px;
+}
+
+.c4 {
+  color: #008ec4;
+  outline-style: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.c1:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width:680px) {
+  .c2 {
+    display: inline-block;
+    font-size: 32px;
+    padding: 7px 0 5px 0;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .c1 {
+    position: relative;
+    display: inline;
+    width: 42px;
+    height: 42px;
+    left: auto;
+    top: 7px;
+  }
+}
+
+<body>
     <div>
-      <div>
-        <mock />
-      </div>
+      <header>
+        <div
+          class="c0"
+        >
+          <mock
+            class="c1"
+          />
+          <h1
+            class="c2"
+          >
+            Bower Search
+          </h1>
+          <h4
+            class="c3"
+          >
+            Powered by
+             
+            <a
+              class="c4"
+              href="https://libraries.io/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              libraries.io
+            </a>
+          </h4>
+        </div>
+      </header>
     </div>
   </body>,
-  "container": <div>
-    <div>
-      <mock />
-    </div>
+  "container": .c0 {
+  display: block;
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 10px;
+  font-weight: bold;
+}
+
+.c2 {
+  font-size: 64px;
+  -webkit-letter-spacing: -0.025em;
+  -moz-letter-spacing: -0.025em;
+  -ms-letter-spacing: -0.025em;
+  letter-spacing: -0.025em;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+  padding-left: 200px;
+}
+
+.c3 {
+  margin: -20px 0 0 203px;
+  font-size: 19px;
+}
+
+.c4 {
+  color: #008ec4;
+  outline-style: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+}
+
+.c1 {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: 15px;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.c1:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width:680px) {
+  .c2 {
+    display: inline-block;
+    font-size: 32px;
+    padding: 7px 0 5px 0;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .c1 {
+    position: relative;
+    display: inline;
+    width: 42px;
+    height: 42px;
+    left: auto;
+    top: 7px;
+  }
+}
+
+<div>
+    <header>
+      <div
+        class="c0"
+      >
+        <mock
+          class="c1"
+        />
+        <h1
+          class="c2"
+        >
+          Bower Search
+        </h1>
+        <h4
+          class="c3"
+        >
+          Powered by
+           
+          <a
+            class="c4"
+            href="https://libraries.io/"
+            rel="noreferrer"
+            target="_blank"
+          >
+            libraries.io
+          </a>
+        </h4>
+      </div>
+    </header>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
