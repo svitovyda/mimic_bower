@@ -13,6 +13,7 @@ Romanna Koval
 
 ## How to use
 - run `yarn install` in the root
+- set in your local environment value LIBRARIES_API_KEY=YOUR_KEY
 
 `yarn start` to run in dev mode
 
