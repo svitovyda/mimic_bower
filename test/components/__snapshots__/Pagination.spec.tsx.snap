@@ -1,0 +1,563 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination renders last page 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<body>
+    <div>
+      <div>
+        <button
+          class="c0"
+        >
+          ← Previous
+        </button>
+        <button
+          class="c0"
+          disabled=""
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<div>
+    <div>
+      <button
+        class="c0"
+      >
+        ← Previous
+      </button>
+      <button
+        class="c0"
+        disabled=""
+      >
+        Next →
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Pagination renders without error for initial data 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<body>
+    <div>
+      <div>
+        <button
+          class="c0"
+          disabled=""
+        >
+          ← Previous
+        </button>
+        <button
+          class="c0"
+          disabled=""
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<div>
+    <div>
+      <button
+        class="c0"
+        disabled=""
+      >
+        ← Previous
+      </button>
+      <button
+        class="c0"
+        disabled=""
+      >
+        Next →
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Pagination renders without error for invalid data 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<body>
+    <div>
+      <div>
+        <button
+          class="c0"
+        >
+          ← Previous
+        </button>
+        <button
+          class="c0"
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<div>
+    <div>
+      <button
+        class="c0"
+      >
+        ← Previous
+      </button>
+      <button
+        class="c0"
+      >
+        Next →
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Pagination renders without error for valid data 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<body>
+    <div>
+      <div>
+        <button
+          class="c0"
+        >
+          ← Previous
+        </button>
+        <button
+          class="c0"
+        >
+          Next →
+        </button>
+      </div>
+    </div>
+  </body>,
+  "container": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<div>
+    <div>
+      <button
+        class="c0"
+      >
+        ← Previous
+      </button>
+      <button
+        class="c0"
+      >
+        Next →
+      </button>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

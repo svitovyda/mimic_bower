@@ -8,6 +8,7 @@ exports[`ModuleItem renders without error 1`] = `
       <div>
         grunt
          
+         
         12193
       </div>
     </div>
@@ -15,6 +16,7 @@ exports[`ModuleItem renders without error 1`] = `
   "container": <div>
     <div>
       grunt
+       
        
       12193
     </div>

@@ -3,13 +3,97 @@
 exports[`Content renders without error 1`] = `
 {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<body>
     <div>
-      <div />
+      <div>
+        <div />
+        <div>
+          <button
+            class="c0"
+            disabled=""
+          >
+            ← Previous
+          </button>
+          <button
+            class="c0"
+            disabled=""
+          >
+            Next →
+          </button>
+        </div>
+      </div>
     </div>
   </body>,
-  "container": <div>
-    <div />
+  "container": .c0 {
+  cursor: pointer;
+  outline: 0;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  background-color: white;
+  border: 2px solid #007aff;
+  padding: 6px 12px;
+  font-size: 16px;
+  border-radius: 0.25rem;
+  color: #008ec4;
+}
+
+.c0:hover:enabled {
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.c0:disabled {
+  color: lightgray;
+  border-color: lightgray;
+}
+
+<div>
+    <div>
+      <div />
+      <div>
+        <button
+          class="c0"
+          disabled=""
+        >
+          ← Previous
+        </button>
+        <button
+          class="c0"
+          disabled=""
+        >
+          Next →
+        </button>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

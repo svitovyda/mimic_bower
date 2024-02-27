@@ -9,10 +9,12 @@ exports[`List renders without error 1`] = `
         <div>
           grunt
            
+           
           12193
         </div>
         <div>
           grunt-karma
+           
            
           471
         </div>
@@ -24,10 +26,12 @@ exports[`List renders without error 1`] = `
       <div>
         grunt
          
+         
         12193
       </div>
       <div>
         grunt-karma
+         
          
         471
       </div>

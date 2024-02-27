@@ -1,5 +1,6 @@
 {
   "baseUrl": "libraries.io",
   "minimumSearchQueryLength": 3,
-  "searchInputDebounse": 1200
+  "searchInputDebounse": 1200,
+  "searchItemsPageMaxSize": 5
 }
