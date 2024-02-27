@@ -29,13 +29,6 @@ exports[`Header renders without error 1`] = `
   font-size: 19px;
 }
 
-.c4 {
-  color: #008ec4;
-  outline-style: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-}
-
 .c1 {
   display: block;
   position: absolute;
@@ -96,7 +89,6 @@ exports[`Header renders without error 1`] = `
             Powered by
              
             <a
-              class="c4"
               href="https://libraries.io/"
               rel="noreferrer"
               target="_blank"
@@ -132,13 +124,6 @@ exports[`Header renders without error 1`] = `
 .c3 {
   margin: -20px 0 0 203px;
   font-size: 19px;
-}
-
-.c4 {
-  color: #008ec4;
-  outline-style: none;
-  -webkit-text-decoration: none;
-  text-decoration: none;
 }
 
 .c1 {
@@ -200,7 +185,6 @@ exports[`Header renders without error 1`] = `
           Powered by
            
           <a
-            class="c4"
             href="https://libraries.io/"
             rel="noreferrer"
             target="_blank"

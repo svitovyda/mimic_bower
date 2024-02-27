@@ -1,4 +1,4 @@
-import { HeaderContainer, HeaderLink, HeaderLogo, HeaderSubtitle, HeaderTitle } from "../styles/Header";
+import { HeaderContainer, HeaderLogo, HeaderSubtitle, HeaderTitle } from "../styles/Header";
 import * as React from "react";
 
 export const Header: React.FC = React.memo(() => {
@@ -9,9 +9,9 @@ export const Header: React.FC = React.memo(() => {
         <HeaderTitle>Bower Search</HeaderTitle>
         <HeaderSubtitle>
           Powered by{" "}
-          <HeaderLink href="https://libraries.io/" target="_blank" rel="noreferrer">
+          <a href="https://libraries.io/" target="_blank" rel="noreferrer">
             libraries.io
-          </HeaderLink>
+          </a>
         </HeaderSubtitle>
       </HeaderContainer>
     </header>

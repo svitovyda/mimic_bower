@@ -1,4 +1,5 @@
 import { Content } from "./Content";
+import { Footer } from "./Footer";
 import { Search } from "./Search";
 import * as React from "react";
 
@@ -16,6 +17,7 @@ export const Main: React.FC = () => {
     <div>
       <Search onQueryChanged={onNewQuery} />
       <Content query={query} />
+      <Footer />
     </div>
   );
 };

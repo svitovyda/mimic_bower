@@ -34,12 +34,6 @@ export const HeaderSubtitle = styled.h4`
   }
 `;
 
-export const HeaderLink = styled.a`
-  color: #008ec4;
-  outline-style: none;
-  text-decoration: none;
-`;
-
 export const HeaderLogo = styled(LogoSvg)`
   display: block;
   position: absolute;

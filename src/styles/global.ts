@@ -17,15 +17,24 @@ export const GlobalStyle = createGlobalStyle`
     display: block;
     background: #ffcc2f;
     color: #543729;
-    display: block;
     margin-bottom: 20px;
     min-height: 168px;
     @media only screen and (max-width:680px) {
       min-height: auto;
     }
   }
+  footer {
+    display: block;
+    padding-top: 10px;
+    border-top: 1px solid #DDD;
+    margin-top: 40px;
+    font-size: .9em;
+  }
   a {
     background-color: transparent;
+    color: #008ec4;
+    outline-style: none;
+    text-decoration: none;
   }
   a:active,
   a:hover {
@@ -36,9 +45,9 @@ export const GlobalStyle = createGlobalStyle`
     margin-top: 195px;
   }
   p {
-    font-size: smaller;
-    text-align: justify;
-    text-justify: inter-word;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
   }
   footer {
     background-color: white;
