@@ -8,7 +8,7 @@ export interface ModuleItemProp {
 export const ModuleItem: React.FC<ModuleItemProp> = ({ packageElement }: ModuleItemProp) => {
   return (
     <div>
-      {packageElement.name} {packageElement.stars}
+      {packageElement.name} {packageElement.owner} {packageElement.stars}
     </div>
   );
 };

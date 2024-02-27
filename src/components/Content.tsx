@@ -1,22 +1,20 @@
 import { useContentFetcher } from "../hooks/contentFetcher";
-import { ModuleItem } from "./ModuleItem";
+import { List } from "./List";
 import { LoaderAnimation } from "./ui/LoaderAnimation";
 import * as React from "react";
 
-export const Content: React.FC = () => {
+export interface ContentProps {
+  query: string;
+}
+
+export const Content: React.FC<ContentProps> = ({ query }: ContentProps) => {
   const [state, setQuery] = useContentFetcher("");
 
   React.useEffect(() => {
-    setQuery("jquery");
-  }, [setQuery]);
+    setQuery(query);
+  }, [query, setQuery]);
 
   if (state.isLoading) return <LoaderAnimation />;
   if (state.isError) return <div>Some error occurred, try again later!</div>;
-  return (
-    <div>
-      {state.data.map((p) => (
-        <ModuleItem key={p.name} packageElement={p} />
-      ))}
-    </div>
-  );
+  return <List data={state.data} />;
 };

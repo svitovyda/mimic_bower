@@ -31,15 +31,15 @@ const dataFetchReducer = (state: FetchState, action: FetchAction): FetchState =>
 export const useContentFetcher = (initialQuery: string): [FetchState, React.Dispatch<React.SetStateAction<string>>] => {
   const [query, setQuery] = React.useState<string>(initialQuery);
 
-  const [state, dispatch] = React.useReducer(dataFetchReducer, { isLoading: true, isError: false, data: [] });
+  const [state, dispatch] = React.useReducer(dataFetchReducer, { isLoading: false, isError: false, data: [] });
 
   React.useEffect(() => {
     var didUnmount = false;
 
     const fetchData = async () => {
-      dispatch({ type: "FETCH_INIT" });
-
       if (query.length > 0) {
+        dispatch({ type: "FETCH_INIT" });
+
         try {
           const result = await ApiService.searchBowerModules(query);
           if (!didUnmount) {

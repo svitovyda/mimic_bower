@@ -1,3 +1,5 @@
 {
-  "baseUrl": "libraries.io"
+  "baseUrl": "libraries.io",
+  "minimumSearchQueryLength": 3,
+  "searchInputDebounse": 1200
 }

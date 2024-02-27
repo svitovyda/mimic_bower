@@ -1,4 +1,4 @@
-import { type FetchState, useContentFetcher } from "../../src/hooks/contentFetcher";
+import { useContentFetcher } from "../../src/hooks/contentFetcher";
 import { ApiService } from "../../src/services/ApiServise";
 import { MockList } from "../__mock__/mock";
 import { act, renderHook, waitFor } from "@testing-library/react";
@@ -7,12 +7,11 @@ jest.mock("../../src/services/ApiServise");
 
 describe("useContentFetcher", () => {
   it("initializes with correct initial state", () => {
-    const initialState: FetchState = { isError: false, isLoading: true, data: [] };
     const { result } = renderHook(() => useContentFetcher(""));
 
     const [state, setQuery] = result.current;
 
-    expect(state).toEqual(initialState);
+    expect(state).toEqual({ isError: false, isLoading: false, data: [] });
     expect(typeof setQuery).toBe("function");
   });
 
