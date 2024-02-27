@@ -20,15 +20,16 @@ export const Content: React.FC<ContentProps> = ({ query }: ContentProps) => {
 
   React.useEffect(() => {
     setQuery(query);
+    setPage([]);
   }, [query, setQuery]);
 
   React.useEffect(() => {
-    setPage(
-      fetchState.data.slice(
-        (paginationState.currentPage - 1) * ItemsPerPage,
-        paginationState.currentPage * ItemsPerPage
-      )
-    );
+    if (fetchState.data.length === 0) setPage([]);
+    else {
+      const pageStart = (paginationState.currentPage - 1) * ItemsPerPage;
+
+      setPage(fetchState.data.slice(pageStart, pageStart + ItemsPerPage));
+    }
   }, [fetchState.data, paginationState]);
 
   if (fetchState.isLoading) return <LoaderAnimation />;

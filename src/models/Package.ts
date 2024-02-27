@@ -18,4 +18,5 @@ export interface Package {
   repository_url: string;
   owner?: string;
   versions: Version[];
+  platform: string;
 }

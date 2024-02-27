@@ -6,14 +6,12 @@ export interface ListProps {
   data: Package[];
 }
 
-export const List: React.FC<ListProps> = React.memo(({ data }: ListProps) => {
+export const List: React.FC<ListProps> = ({ data }: ListProps) => {
   return (
     <div>
-      {data.map((p) => (
-        <ModuleItem key={p.name} packageElement={p} />
+      {data.map((p, i) => (
+        <ModuleItem key={`${i}-${p.name}-${p.platform}`} packageElement={p} />
       ))}
     </div>
   );
-});
-
-List.displayName = "List";
+};
