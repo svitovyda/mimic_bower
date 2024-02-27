@@ -8,7 +8,7 @@ describe("ApiService", () => {
   });
 
   it("fetches packages", async () => {
-    fetchMock.getOnce(`https://libraries.io/api/api/search?q=jquery&api_key=${process.env.LIBRARIES_API_KEY}`, {
+    fetchMock.getOnce(`https://libraries.io/api/search?q=jquery&api_key=${process.env.LIBRARIES_API_KEY}`, {
       status: 200,
       body: MockList,
       headers: { "Content-Type": "application/json" },
@@ -21,7 +21,7 @@ describe("ApiService", () => {
 
   it("encodes search parameter", async () => {
     fetchMock.getOnce(
-      `https://libraries.io/api/api/search?q=%40babel%2Fpreset-env&api_key=${process.env.LIBRARIES_API_KEY}`,
+      `https://libraries.io/api/search?q=%40babel%2Fpreset-env&api_key=${process.env.LIBRARIES_API_KEY}`,
       {
         status: 200,
         body: MockList,
@@ -35,7 +35,7 @@ describe("ApiService", () => {
   });
 
   it("handles failed fetch", async () => {
-    fetchMock.getOnce(`https://libraries.io/api/api/search?q=jquery&api_key=${process.env.LIBRARIES_API_KEY}`, {
+    fetchMock.getOnce(`https://libraries.io/api/search?q=jquery&api_key=${process.env.LIBRARIES_API_KEY}`, {
       status: 500,
     });
 

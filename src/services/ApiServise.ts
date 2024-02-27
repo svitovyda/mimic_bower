@@ -14,7 +14,7 @@ export class ApiService {
       }
       return await response.json();
     } catch (error) {
-      console.error("Error fetching data:", error);
+      console.error("Failed to fetch data", error);
       throw error;
     }
   }

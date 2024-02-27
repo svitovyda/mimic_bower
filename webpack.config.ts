@@ -8,6 +8,7 @@ const ForkTsCheckerWebpackPlugin = require("fork-ts-checker-webpack-plugin");
 const environment = {
   APP_VERSION: "1.0.0",
   ENV_NAME: "test",
+  LIBRARIES_API_KEY: "YOUR_KEY",
   ...process.env,
 };
 
@@ -62,6 +63,9 @@ const createBaseConfig = () => ({
         },
         charSet: "UTF-8",
       },
+    }),
+    new webpack.DefinePlugin({
+      "process.env.LIBRARIES_API_KEY": JSON.stringify(environment.LIBRARIES_API_KEY),
     }),
   ],
   watchOptions: {
