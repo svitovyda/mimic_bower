@@ -8,12 +8,9 @@ import * as React from "react";
 export const Main: React.FC = () => {
   const [query, setQuery] = React.useState<string>("");
 
-  const onNewQuery = React.useCallback(
-    (newQuery: string) => {
-      setQuery(newQuery);
-    },
-    [setQuery]
-  );
+  const onNewQuery = React.useCallback((newQuery: string) => {
+    setQuery(newQuery);
+  }, []);
 
   return (
     <MainContainer>

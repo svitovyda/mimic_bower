@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { MenuButton, SidebarContainer, SidebarContent } from "../styles/Sidebar";
 import * as React from "react";
 

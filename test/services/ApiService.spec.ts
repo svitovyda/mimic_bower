@@ -41,4 +41,16 @@ describe("ApiService", () => {
 
     await expect(ApiService.searchBowerModules("jquery")).rejects.toThrow("Failed to fetch data");
   });
+
+  it("fetches packages sorted by stars", async () => {
+    fetchMock.getOnce(`https://libraries.io/api/search?q=jquery&api_key=${process.env.LIBRARIES_API_KEY}&sort=stars`, {
+      status: 200,
+      body: MockList,
+      headers: { "Content-Type": "application/json" },
+    });
+
+    const modules = await ApiService.searchBowerModules("jquery", "stars");
+
+    expect(modules).toEqual(MockList);
+  });
 });

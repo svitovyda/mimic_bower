@@ -1,5 +1,5 @@
 import type { Package } from "../models/Package";
-import { ApiService } from "../services/ApiServise";
+import { ApiService, type SortType } from "../services/ApiServise";
 import * as React from "react";
 
 type FetchActionType = "FETCH_INIT" | "FETCH_SUCCESS" | "FETCH_FAILURE";
@@ -28,8 +28,15 @@ const dataFetchReducer = (state: FetchState, action: FetchAction): FetchState =>
   }
 };
 
-export const useContentFetcher = (initialQuery: string): [FetchState, React.Dispatch<React.SetStateAction<string>>] => {
+export const useContentFetcher = (
+  initialQuery: string
+): [
+  FetchState,
+  React.Dispatch<React.SetStateAction<string>>,
+  React.Dispatch<React.SetStateAction<SortType | undefined>>,
+] => {
   const [query, setQuery] = React.useState<string>(initialQuery);
+  const [sort, setSort] = React.useState<SortType | undefined>();
 
   const [state, dispatch] = React.useReducer(dataFetchReducer, { isLoading: false, isError: false, data: [] });
 
@@ -41,7 +48,7 @@ export const useContentFetcher = (initialQuery: string): [FetchState, React.Disp
         dispatch({ type: "FETCH_INIT" });
 
         try {
-          const result = await ApiService.searchBowerModules(query);
+          const result = await ApiService.searchBowerModules(query, sort);
           if (!didUnmount) {
             dispatch({ type: "FETCH_SUCCESS", payload: result });
           }
@@ -58,7 +65,7 @@ export const useContentFetcher = (initialQuery: string): [FetchState, React.Disp
     return () => {
       didUnmount = true;
     };
-  }, [query]);
+  }, [query, sort]);
 
-  return [state, setQuery];
+  return [state, setQuery, setSort];
 };

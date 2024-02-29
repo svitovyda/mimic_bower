@@ -1,7 +1,7 @@
 import { HeaderContainer, HeaderLogo, HeaderSubtitle, HeaderTitle } from "../styles/Header";
 import * as React from "react";
 
-export const Header: React.FC = React.memo(() => {
+export const Header: React.FC = () => {
   return (
     <header>
       <HeaderContainer>
@@ -16,6 +16,4 @@ export const Header: React.FC = React.memo(() => {
       </HeaderContainer>
     </header>
   );
-});
-
-Header.displayName = "Header";
+};

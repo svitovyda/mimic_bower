@@ -1,7 +1,7 @@
 import { LoaderContainer, LoaderRing, LoaderRingInner, LoaderTextContainer } from "../../styles/ui/LoaderAnimation";
 import * as React from "react";
 
-export const LoaderAnimation: React.FC = React.memo(() => {
+export const LoaderAnimation: React.FC = () => {
   return (
     <LoaderContainer>
       <LoaderRing />
@@ -9,6 +9,4 @@ export const LoaderAnimation: React.FC = React.memo(() => {
       <LoaderTextContainer>loading</LoaderTextContainer>
     </LoaderContainer>
   );
-});
-
-LoaderAnimation.displayName = "LoaderAnimation";
+};

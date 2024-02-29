@@ -1,6 +1,6 @@
 import * as React from "react";
 
-export const Footer: React.FC = React.memo(() => {
+export const Footer: React.FC = () => {
   return (
     <footer>
       <p>
@@ -11,6 +11,4 @@ export const Footer: React.FC = React.memo(() => {
       <p>Our supporters: TBA</p>
     </footer>
   );
-});
-
-Footer.displayName = "Footer";
+};

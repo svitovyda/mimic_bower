@@ -17,6 +17,12 @@ exports[`Main renders without error 1`] = `
   width: 100%;
 }
 
+.c8 {
+  border-radius: 2px;
+  box-shadow: 0 0 1px #ccc;
+  padding: 10px;
+}
+
 .c2 {
   cursor: pointer;
   outline: 0;
@@ -204,22 +210,10 @@ exports[`Main renders without error 1`] = `
               value=""
             />
           </div>
-          <div>
+          <div
+            class="c8"
+          >
             <div />
-            <div>
-              <button
-                class="c2"
-                disabled=""
-              >
-                ← Previous
-              </button>
-              <button
-                class="c2"
-                disabled=""
-              >
-                Next →
-              </button>
-            </div>
           </div>
           <footer>
             <p>
@@ -251,6 +245,12 @@ exports[`Main renders without error 1`] = `
 
 .c5 {
   width: 100%;
+}
+
+.c8 {
+  border-radius: 2px;
+  box-shadow: 0 0 1px #ccc;
+  padding: 10px;
 }
 
 .c2 {
@@ -439,22 +439,10 @@ exports[`Main renders without error 1`] = `
             value=""
           />
         </div>
-        <div>
+        <div
+          class="c8"
+        >
           <div />
-          <div>
-            <button
-              class="c2"
-              disabled=""
-            >
-              ← Previous
-            </button>
-            <button
-              class="c2"
-              disabled=""
-            >
-              Next →
-            </button>
-          </div>
         </div>
         <footer>
           <p>

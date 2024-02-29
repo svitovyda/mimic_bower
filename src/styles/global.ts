@@ -26,28 +26,26 @@ export const GlobalStyle = createGlobalStyle`
   footer {
     display: block;
     padding-top: 10px;
-    border-top: 1px solid #DDD;
+    border-top: 1px solid #ddd;
     margin-top: 40px;
     font-size: .9em;
   }
   a {
+    cursor: pointer;
     background-color: transparent;
     color: #008ec4;
     outline-style: none;
     text-decoration: none;
   }
-  a:active,
-
+  a:hover {
+    text-decoration: underline;
+  }
   li a {
     color: #00acee;
     font-size: 17px;
     font-weight: bold;
     line-height: 1.5;
   }
-  li a:hover {
-    text-decoration: underline;
-  }
-
   main {
     margin-top: 195px;
   }
@@ -60,7 +58,6 @@ export const GlobalStyle = createGlobalStyle`
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
   }
   ul {
     list-style: none;

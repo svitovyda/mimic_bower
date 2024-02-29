@@ -3,22 +3,144 @@
 exports[`ModuleItem renders without error 1`] = `
 {
   "asFragment": [Function],
-  "baseElement": <body>
+  "baseElement": .c0 {
+  border-bottom: 1px solid #eee;
+  height: 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
+  -webkit-flex: 70;
+  -ms-flex: 70;
+  flex: 70;
+}
+
+.c3 {
+  -webkit-flex: 15;
+  -ms-flex: 15;
+  flex: 15;
+}
+
+.c4 {
+  -webkit-flex: 15;
+  -ms-flex: 15;
+  flex: 15;
+}
+
+@media only screen and (max-width:680px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .c4 {
+    display: none;
+  }
+}
+
+<body>
     <div>
-      <div>
-        grunt
-         
-         
-        12193
+      <div
+        class="c0"
+      >
+        <span
+          class="c1 c2"
+        >
+          grunt
+        </span>
+        <span
+          class="c1 c3"
+        />
+        <span
+          class="c1 c4"
+        >
+          12193
+        </span>
       </div>
     </div>
   </body>,
-  "container": <div>
-    <div>
-      grunt
-       
-       
-      12193
+  "container": .c0 {
+  border-bottom: 1px solid #eee;
+  height: 35px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.c1 {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+
+.c2 {
+  -webkit-flex: 70;
+  -ms-flex: 70;
+  flex: 70;
+}
+
+.c3 {
+  -webkit-flex: 15;
+  -ms-flex: 15;
+  flex: 15;
+}
+
+.c4 {
+  -webkit-flex: 15;
+  -ms-flex: 15;
+  flex: 15;
+}
+
+@media only screen and (max-width:680px) {
+  .c3 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width:680px) {
+  .c4 {
+    display: none;
+  }
+}
+
+<div>
+    <div
+      class="c0"
+    >
+      <span
+        class="c1 c2"
+      >
+        grunt
+      </span>
+      <span
+        class="c1 c3"
+      />
+      <span
+        class="c1 c4"
+      >
+        12193
+      </span>
     </div>
   </div>,
   "debug": [Function],
