@@ -53,7 +53,7 @@ exports[`LoaderAnimation renders without error 1`] = `
   -webkit-animation: kRlIGi 3s linear 0s infinite normal;
   animation: kRlIGi 3s linear 0s infinite normal;
   color: lightgrey;
-  font: bold 8px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 8px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   opacity: 0;
   text-align: center;
   text-transform: uppercase;
@@ -128,7 +128,7 @@ exports[`LoaderAnimation renders without error 1`] = `
   -webkit-animation: kRlIGi 3s linear 0s infinite normal;
   animation: kRlIGi 3s linear 0s infinite normal;
   color: lightgrey;
-  font: bold 8px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: bold 8px 'Helvetica Neue', Helvetica, Arial, sans-serif;
   opacity: 0;
   text-align: center;
   text-transform: uppercase;

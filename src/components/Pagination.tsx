@@ -1,6 +1,6 @@
-import { PaginationContainer } from "../styles/Pagination";
-import { Button } from "../styles/ui/Button";
-import * as React from "react";
+import { PaginationContainer } from '../styles/Pagination';
+import { Button } from '../styles/ui/Button';
+import * as React from 'react';
 
 export interface PaginationProps {
   totalPages: number;
@@ -34,4 +34,4 @@ export const Pagination: React.FC<PaginationProps> = React.memo(
   }
 );
 
-Pagination.displayName = "Pagination";
+Pagination.displayName = 'Pagination';

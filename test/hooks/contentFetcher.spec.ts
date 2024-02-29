@@ -1,30 +1,30 @@
-import { useContentFetcher } from "../../src/hooks/contentFetcher";
-import { ApiService } from "../../src/services/ApiServise";
-import { MockList } from "../__mock__/mock";
-import { act, renderHook, waitFor } from "@testing-library/react";
+import { useContentFetcher } from '../../src/hooks/contentFetcher';
+import { ApiService } from '../../src/services/ApiServise';
+import { MockList } from '../__mock__/mock';
+import { act, renderHook, waitFor } from '@testing-library/react';
 
-jest.mock("../../src/services/ApiServise");
+jest.mock('../../src/services/ApiServise');
 
-describe("useContentFetcher", () => {
-  it("initializes with correct initial state", () => {
-    const { result } = renderHook(() => useContentFetcher(""));
+describe('useContentFetcher', () => {
+  it('initializes with correct initial state', () => {
+    const { result } = renderHook(() => useContentFetcher(''));
 
     const [state, setQuery] = result.current;
 
     expect(state).toEqual({ isError: false, isLoading: false, data: [] });
-    expect(typeof setQuery).toBe("function");
+    expect(typeof setQuery).toBe('function');
   });
 
-  it("correctly updates state when fetching data", async () => {
+  it('correctly updates state when fetching data', async () => {
     ApiService.searchBowerModules = jest.fn(() => Promise.resolve(MockList));
 
-    const { result } = renderHook(() => useContentFetcher("jquery"));
+    const { result } = renderHook(() => useContentFetcher('jquery'));
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_, setQuery] = result.current;
 
     act(() => {
-      setQuery("new query");
+      setQuery('new query');
     });
 
     await waitFor(() => {
@@ -36,16 +36,16 @@ describe("useContentFetcher", () => {
     });
   });
 
-  it("correctly updates state when fetching data error", async () => {
-    ApiService.searchBowerModules = jest.fn(() => Promise.reject("Error"));
+  it('correctly updates state when fetching data error', async () => {
+    ApiService.searchBowerModules = jest.fn(() => Promise.reject('Error'));
 
-    const { result } = renderHook(() => useContentFetcher("jquery"));
+    const { result } = renderHook(() => useContentFetcher('jquery'));
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [_, setQuery] = result.current;
 
     act(() => {
-      setQuery("new query");
+      setQuery('new query');
     });
 
     await waitFor(() => {

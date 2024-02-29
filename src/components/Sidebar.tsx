@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import { MenuButton, SidebarContainer, SidebarContent } from "../styles/Sidebar";
-import * as React from "react";
+import { MenuButton, SidebarContainer, SidebarContent } from '../styles/Sidebar';
+import * as React from 'react';
 
 export const Sidebar: React.FC = () => {
   const [showContent, setShowContent] = React.useState<boolean>(false);

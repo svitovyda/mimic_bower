@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
 const RotateRing = keyframes`
   0% { transform: rotate(0) }
@@ -58,7 +58,7 @@ export const LoaderTextContainer = styled.div`
   animation: ${TextLoading} 3s linear 0s infinite normal;
   color: lightgrey;
   font:
-    bold 8px "Helvetica Neue",
+    bold 8px 'Helvetica Neue',
     Helvetica,
     Arial,
     sans-serif;

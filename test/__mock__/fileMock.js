@@ -1,1 +1,1 @@
-module.exports = "Mock";
+module.exports = 'Mock';

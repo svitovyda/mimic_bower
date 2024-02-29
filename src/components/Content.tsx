@@ -1,14 +1,14 @@
-import { useContentFetcher } from "../hooks/contentFetcher";
-import { usePagination } from "../hooks/usePagination";
-import type { Package } from "../models/Package";
-import type { SortType } from "../services/ApiServise";
-import { ContentContainer, ContentErrorContainer } from "../styles/Content";
-import { List } from "./List";
-import { ListHeader } from "./ListHeader";
-import { Pagination } from "./Pagination";
-import { LoaderAnimation } from "./ui/LoaderAnimation";
-import configJson from "config";
-import * as React from "react";
+import { useContentFetcher } from '../hooks/contentFetcher';
+import { usePagination } from '../hooks/usePagination';
+import type { Package } from '../models/Package';
+import type { SortType } from '../services/ApiServise';
+import { ContentContainer, ContentErrorContainer } from '../styles/Content';
+import { List } from './List';
+import { ListHeader } from './ListHeader';
+import { Pagination } from './Pagination';
+import { LoaderAnimation } from './ui/LoaderAnimation';
+import configJson from 'config';
+import * as React from 'react';
 
 const ItemsPerPage = configJson.searchItemsPageMaxSize;
 
@@ -17,7 +17,7 @@ export interface ContentProps {
 }
 
 export const Content: React.FC<ContentProps> = ({ query }: ContentProps) => {
-  const [fetchState, setQuery, setSort] = useContentFetcher("");
+  const [fetchState, setQuery, setSort] = useContentFetcher('');
   const [paginationState, navigateToPage] = usePagination(fetchState.data);
   const [pageData, setPageData] = React.useState<Package[]>([]);
 

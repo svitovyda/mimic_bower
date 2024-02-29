@@ -1,5 +1,5 @@
-import { HeaderContainer, HeaderLogo, HeaderSubtitle, HeaderTitle } from "../styles/Header";
-import * as React from "react";
+import { HeaderContainer, HeaderLogo, HeaderSubtitle, HeaderTitle } from '../styles/Header';
+import * as React from 'react';
 
 export const Header: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ export const Header: React.FC = () => {
         <HeaderLogo />
         <HeaderTitle>Bower Search</HeaderTitle>
         <HeaderSubtitle>
-          Powered by{" "}
+          Powered by{' '}
           <a href="https://libraries.io/" target="_blank" rel="noreferrer">
             libraries.io
           </a>

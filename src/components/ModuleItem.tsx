@@ -1,6 +1,6 @@
-import type { Package } from "../models/Package";
-import { ItemContainer, NameItem, OwnerItem, StarsItem } from "../styles/ModuleItem";
-import * as React from "react";
+import type { Package } from '../models/Package';
+import { ItemContainer, NameItem, OwnerItem, StarsItem } from '../styles/ModuleItem';
+import * as React from 'react';
 
 export interface ModuleItemProp {
   packageElement: Package;
@@ -16,4 +16,4 @@ export const ModuleItem: React.FC<ModuleItemProp> = React.memo(({ packageElement
   );
 });
 
-ModuleItem.displayName = "ModuleItem";
+ModuleItem.displayName = 'ModuleItem';

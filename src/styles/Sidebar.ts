@@ -1,5 +1,5 @@
-import { Button } from "./ui/Button";
-import styled from "styled-components";
+import { Button } from './ui/Button';
+import styled from 'styled-components';
 
 export const MenuButton = styled(Button)`
   width: 250px;
@@ -25,7 +25,7 @@ export const SidebarContainer = styled.div`
 
 export const SidebarContent = styled.div<{ isShown: boolean }>`
   width: 100%;
-  display: ${(props) => (props.isShown ? "block" : "none")};
+  display: ${(props) => (props.isShown ? 'block' : 'none')};
 
   @media only screen and (min-width: 681px) {
     display: block;

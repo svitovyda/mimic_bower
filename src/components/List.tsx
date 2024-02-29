@@ -1,6 +1,6 @@
-import type { Package } from "../models/Package";
-import { ModuleItem } from "./ModuleItem";
-import * as React from "react";
+import type { Package } from '../models/Package';
+import { ModuleItem } from './ModuleItem';
+import * as React from 'react';
 
 export interface ListProps {
   data: Package[];

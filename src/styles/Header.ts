@@ -1,5 +1,5 @@
-import LogoSvg from "./../assets/logo.svg";
-import styled from "styled-components";
+import LogoSvg from './../assets/logo.svg';
+import styled from 'styled-components';
 
 export const HeaderContainer = styled.div`
   display: block;

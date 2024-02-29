@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import type { SortType } from "../services/ApiServise";
-import { ListHeaderContainer, NameLink, OwnerLink, StarsLink } from "../styles/ListHeader";
-import * as React from "react";
+import type { SortType } from '../services/ApiServise';
+import { ListHeaderContainer, NameLink, OwnerLink, StarsLink } from '../styles/ListHeader';
+import * as React from 'react';
 
 export interface ListHeaderProps {
   onSort: (sortBy?: SortType) => void;
@@ -12,9 +12,9 @@ export const ListHeader: React.FC<ListHeaderProps> = React.memo(({ onSort }: Lis
     <ListHeaderContainer>
       <NameLink onClick={() => onSort()}>Name</NameLink>
       <OwnerLink>Owner</OwnerLink>
-      <StarsLink onClick={() => onSort("stars")}>Stars</StarsLink>
+      <StarsLink onClick={() => onSort('stars')}>Stars</StarsLink>
     </ListHeaderContainer>
   );
 });
 
-ListHeader.displayName = "ListHeader";
+ListHeader.displayName = 'ListHeader';

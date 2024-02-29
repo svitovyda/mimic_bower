@@ -1,8 +1,8 @@
-import type { Package } from "../models/Package";
-import { ApiService, type SortType } from "../services/ApiServise";
-import * as React from "react";
+import type { Package } from '../models/Package';
+import { ApiService, type SortType } from '../services/ApiServise';
+import * as React from 'react';
 
-type FetchActionType = "FETCH_INIT" | "FETCH_SUCCESS" | "FETCH_FAILURE";
+type FetchActionType = 'FETCH_INIT' | 'FETCH_SUCCESS' | 'FETCH_FAILURE';
 
 export interface FetchState {
   isLoading: boolean;
@@ -17,11 +17,11 @@ interface FetchAction {
 
 const dataFetchReducer = (state: FetchState, action: FetchAction): FetchState => {
   switch (action.type) {
-    case "FETCH_INIT":
+    case 'FETCH_INIT':
       return { ...state, isLoading: true, isError: false };
-    case "FETCH_SUCCESS":
+    case 'FETCH_SUCCESS':
       return { ...state, isLoading: false, isError: false, data: action.payload || [] };
-    case "FETCH_FAILURE":
+    case 'FETCH_FAILURE':
       return { ...state, isLoading: false, isError: true };
     default:
       throw new Error();
@@ -45,16 +45,16 @@ export const useContentFetcher = (
 
     const fetchData = async () => {
       if (query.length > 0) {
-        dispatch({ type: "FETCH_INIT" });
+        dispatch({ type: 'FETCH_INIT' });
 
         try {
           const result = await ApiService.searchBowerModules(query, sort);
           if (!didUnmount) {
-            dispatch({ type: "FETCH_SUCCESS", payload: result });
+            dispatch({ type: 'FETCH_SUCCESS', payload: result });
           }
         } catch (error) {
           if (!didUnmount) {
-            dispatch({ type: "FETCH_FAILURE" });
+            dispatch({ type: 'FETCH_FAILURE' });
           }
         }
       }

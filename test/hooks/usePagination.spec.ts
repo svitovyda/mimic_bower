@@ -1,32 +1,32 @@
-import { usePagination } from "../../src/hooks/usePagination";
-import { act, renderHook, waitFor } from "@testing-library/react";
+import { usePagination } from '../../src/hooks/usePagination';
+import { act, renderHook, waitFor } from '@testing-library/react';
 
-describe("usePagination", () => {
-  it("initializes with correct initial state", () => {
+describe('usePagination', () => {
+  it('initializes with correct initial state', () => {
     let data: any[] = [];
     const { result } = renderHook(() => usePagination(data));
 
     const [state, setPage] = result.current;
 
     expect(state).toEqual({ currentPage: 1, totalPages: 0 });
-    expect(typeof setPage).toBe("function");
+    expect(typeof setPage).toBe('function');
   });
 
-  it("handles new data with 4 pages", () => {
+  it('handles new data with 4 pages', () => {
     let data: any[] = Array(18);
     const { result } = renderHook(() => usePagination(data));
     const [state] = result.current;
     expect(state).toEqual({ currentPage: 1, totalPages: 4 });
   });
 
-  it("handles new data with 10 pages", () => {
+  it('handles new data with 10 pages', () => {
     let data: any[] = Array(50);
     const { result } = renderHook(() => usePagination(data));
     const [state] = result.current;
     expect(state).toEqual({ currentPage: 1, totalPages: 10 });
   });
 
-  it("paginates to valid current page", async () => {
+  it('paginates to valid current page', async () => {
     let data: any[] = Array(50);
     const { result } = renderHook(() => usePagination(data));
     // eslint-disable-next-line @typescript-eslint/no-unused-vars

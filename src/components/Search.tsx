@@ -1,7 +1,7 @@
-import { Input, InputContainer } from "../styles/Search";
-import configJson from "config";
-import debounce from "debounce";
-import * as React from "react";
+import { Input, InputContainer } from '../styles/Search';
+import configJson from 'config';
+import debounce from 'debounce';
+import * as React from 'react';
 
 export interface SearchProps {
   onQueryChanged: (newQuery: string) => void;
@@ -11,7 +11,7 @@ const MinAcceptable = configJson.minimumSearchQueryLength || 3;
 const DebounseInterval = configJson.searchInputDebounse || 1000;
 
 export const Search: React.FC<SearchProps> = React.memo(({ onQueryChanged }: SearchProps) => {
-  const [query, setQuery] = React.useState<string>("");
+  const [query, setQuery] = React.useState<string>('');
 
   const updateSearchQuery = debounce((value) => {
     if (value.length > MinAcceptable) {
@@ -39,4 +39,4 @@ export const Search: React.FC<SearchProps> = React.memo(({ onQueryChanged }: Sea
   );
 });
 
-Search.displayName = "Search";
+Search.displayName = 'Search';
