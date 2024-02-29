@@ -16,27 +16,27 @@ export interface ContentProps {
 export const Content: React.FC<ContentProps> = ({ query }: ContentProps) => {
   const [fetchState, setQuery] = useContentFetcher("");
   const [paginationState, navigateToPage] = usePagination(fetchState.data);
-  const [page, setPage] = React.useState<Package[]>([]);
+  const [pageData, setPageData] = React.useState<Package[]>([]);
 
   React.useEffect(() => {
     setQuery(query);
-    setPage([]);
+    setPageData([]);
   }, [query, setQuery]);
 
   React.useEffect(() => {
-    if (fetchState.data.length === 0) setPage([]);
+    if (fetchState.data.length === 0) setPageData([]);
     else {
       const pageStart = (paginationState.currentPage - 1) * ItemsPerPage;
 
-      setPage(fetchState.data.slice(pageStart, pageStart + ItemsPerPage));
+      setPageData(fetchState.data.slice(pageStart, pageStart + ItemsPerPage));
     }
   }, [fetchState.data, paginationState]);
 
   if (fetchState.isLoading) return <LoaderAnimation />;
-  if (fetchState.isError) return <div>Some error occurred, try again later!</div>;
+  if (fetchState.isError) return <div>Sorry, there was an error while fetching repositories</div>;
   return (
     <div>
-      <List data={page} />
+      <List data={pageData} />
       <Pagination
         currentPage={paginationState.currentPage}
         totalPages={paginationState.totalPages}

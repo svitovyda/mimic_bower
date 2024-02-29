@@ -1,4 +1,4 @@
-import { PaginationButton } from "../styles/Pagination";
+import { Button } from "../styles/ui/Button";
 import * as React from "react";
 
 export interface PaginationProps {
@@ -21,12 +21,12 @@ export const Pagination: React.FC<PaginationProps> = ({ totalPages, currentPage,
 
   return (
     <div>
-      <PaginationButton disabled={currentPage === 1} onClick={handlePrev}>
+      <Button disabled={currentPage === 1} onClick={handlePrev}>
         ← Previous
-      </PaginationButton>
-      <PaginationButton disabled={currentPage === totalPages || totalPages === 0} onClick={handleNext}>
+      </Button>
+      <Button disabled={currentPage === totalPages || totalPages === 0} onClick={handleNext}>
         Next →
-      </PaginationButton>
+      </Button>
     </div>
   );
 };

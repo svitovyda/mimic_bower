@@ -37,8 +37,15 @@ export const GlobalStyle = createGlobalStyle`
     text-decoration: none;
   }
   a:active,
-  a:hover {
-    outline: 0;
+
+  li a {
+    color: #00acee;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  li a:hover {
+    text-decoration: underline;
   }
 
   main {
@@ -54,6 +61,15 @@ export const GlobalStyle = createGlobalStyle`
     margin-top: 20px;
     margin-bottom: 20px;
     width: 100%;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+  }
+  li {
+    margin: 6px 0;
   }
 }
 `;

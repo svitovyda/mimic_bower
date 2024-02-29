@@ -1,3 +1,4 @@
+import { Input, InputContainer } from "../styles/Search";
 import configJson from "config";
 import debounce from "debounce";
 import * as React from "react";
@@ -25,9 +26,16 @@ export const Search: React.FC<SearchProps> = React.memo(({ onQueryChanged }: Sea
   };
 
   return (
-    <div>
-      <input value={query} maxLength={100} onChange={onQueryChange} />
-    </div>
+    <InputContainer>
+      <Input
+        value={query}
+        maxLength={100}
+        onChange={onQueryChange}
+        autoComplete="off"
+        type="search"
+        placeholder="Search..."
+      />
+    </InputContainer>
   );
 });
 
