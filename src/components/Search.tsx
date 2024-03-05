@@ -13,11 +13,15 @@ const DebounseInterval = configJson.searchInputDebounse || 1000;
 export const Search: React.FC<SearchProps> = React.memo(({ onQueryChanged }: SearchProps) => {
   const [query, setQuery] = React.useState<string>('');
 
-  const updateSearchQuery = debounce((value) => {
-    if (value.length > MinAcceptable) {
-      onQueryChanged(value);
-    }
-  }, DebounseInterval);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const updateSearchQuery = React.useCallback(
+    debounce((value) => {
+      if (value.length > MinAcceptable) {
+        onQueryChanged(value);
+      }
+    }, DebounseInterval),
+    [onQueryChanged]
+  );
 
   const onQueryChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const newValue = event.target.value;
